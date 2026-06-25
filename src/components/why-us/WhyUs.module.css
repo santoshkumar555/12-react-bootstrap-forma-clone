@@ -1,0 +1,40 @@
+.whyusbg {
+    background-color: #0b1727;
+}
+
+.longcard {
+    border-color: rgba(255, 255, 255, 0.2);
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.longcard:hover {
+    border-color: #208bf4;
+    transform: translateY(-2px);
+}
+
+.card {
+    border-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.25s linear;
+}
+
+.active {
+    border-color: #208bf4;
+    transition: all 0.25s linear;
+}
+
+.card:hover,
+.active:hover {
+    border-color: rgba(32, 139, 244, 0.7);
+    transform: translateY(-5px);
+}
+
+.bouncebtn {
+    transition: all 0.3s;
+}
+
+.bouncebtn:hover {
+    transform: translateY(-6px);
+    box-shadow: -3px 10px 6px rgba(32, 139, 244, 0.5);
+}

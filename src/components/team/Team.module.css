@@ -1,0 +1,96 @@
+.main {
+    background-color: #020c19;
+    padding: 15px 0 55px;
+}
+
+.teamP1 {
+    color: #208bf4;
+    font-weight: 600;
+}
+
+.teamP4 {
+    color: color-mix(in srgb, #fafdff, transparent 25%);
+}
+
+.teamDesc {
+    color: color-mix(in srgb, #fafdff, transparent 20%);
+}
+
+.teamSecBtn {
+    width: 90px;
+    background-color: color-mix(in srgb, #208bf4, transparent 82%);
+    color: #208bf4;
+}
+
+.border1 {
+    width: 60px;
+}
+
+.teamCard {
+    background-color: #1b2634;
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.teamCard:hover {
+    transform: translateY(-10px);
+}
+
+.imgWrap {
+    position: relative;
+}
+
+.socialIcons {
+    position: absolute;
+    left: 50%;
+    bottom: 18px;
+    display: flex;
+    gap: 12px;
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+    z-index: 5;
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+.teamCard:hover .socialIcons {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-2px);
+}
+
+.icon {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #fff;
+    color: #0d6efd;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.icon:hover {
+    transform: scale(1.06);
+}
+
+@media (max-width: 575px) {
+    .teamCard .card-title,
+    .teamCard .card-text {
+        word-break: normal !important;
+        overflow-wrap: normal !important;
+        hyphens: none !important;
+    }
+
+    :global(.slick-prev),
+    :global(.slick-next) {
+        display: none !important;
+    }
+
+    .section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

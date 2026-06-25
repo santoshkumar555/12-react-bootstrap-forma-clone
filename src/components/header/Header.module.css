@@ -1,0 +1,48 @@
+.header {
+    background: #0c1623;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.title {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.nav {
+    position: relative;
+    display: inline-block;
+    margin-right: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.nav:hover {
+    color: #0d6efd !important;
+}
+
+.navActive {
+    color: #0d6efd !important;
+    font-weight: 600;
+}
+
+.navActive::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: 0;
+    width: 85%;
+    height: 3px;
+    background: #0d6efd;
+}
+
+@media (max-width: 990px) {
+    .navActive::after {
+        left: 35%;
+        bottom: 0;
+        width: 30%;
+    }
+}

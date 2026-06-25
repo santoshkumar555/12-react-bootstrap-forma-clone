@@ -1,0 +1,67 @@
+.section {
+    padding: 60px;
+    text-align: center;
+}
+
+.modalBackdrop {
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(14px) saturate(120%);
+    -webkit-backdrop-filter: blur(14px) saturate(120%);
+}
+
+.modalContent {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.body {
+    position: relative;
+    padding: 0;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    max-height: 85vh;
+    object-fit: cover;
+}
+
+.iconBtn {
+    position: fixed;
+    z-index: 9999;
+
+    padding: 0;
+    border: 0;
+
+    background: transparent;
+    color: #fff;
+
+    cursor: pointer;
+    opacity: 0.85;
+    transition: opacity 0.15s ease;
+}
+
+.iconBtn:hover {
+    opacity: 1;
+}
+
+.closeBtn {
+    top: 18px;
+    right: 22px;
+    font-size: 30px;
+}
+
+.navBtn {
+    top: 50%;
+    padding: 12px;
+    transform: translateY(-50%);
+}
+
+.prevBtn {
+    left: 24px;
+}
+
+.nextBtn {
+    right: 24px;
+}

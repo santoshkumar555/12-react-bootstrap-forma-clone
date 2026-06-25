@@ -1,0 +1,56 @@
+.main {
+    background-color: #020c19;
+    padding: 20px 0;
+}
+
+.teamCard {
+    background-color: #1b2634;
+}
+
+.teamDesc {
+    color: color-mix(in srgb, #fafdff, transparent 20%);
+}
+
+.teamP1 {
+    color: #208bf4;
+}
+
+.teamSecBtn {
+    width: 110px;
+    text-align: center;
+    background-color: color-mix(in srgb, #208bf4, transparent 82%);
+    color: #208bf4;
+}
+
+:global(.slick-slide) > div {
+    padding: 0 15px;
+}
+
+.arrowBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+
+    background: transparent;
+    transition:
+        background-color 0.25s ease,
+        transform 0.2s ease;
+}
+
+.arrowIcon {
+    color: #fff;
+    transition: color 0.25s ease;
+}
+
+.arrowBtn:hover {
+    background-color: #0d6efd; 
+    transform: translateY(-2px);
+}
+
+.arrowBtn:hover .arrowIcon {
+    color: #fff;
+}

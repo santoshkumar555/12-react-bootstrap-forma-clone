@@ -1,0 +1,20 @@
+.footerbg {
+    background-color: rgba(0, 0, 0, 0.689);
+}
+
+.footerTitle {
+    font-family: "Montserrat", sans-serif;
+}
+
+.social {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.elementHover {
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.elementHover:hover {
+    color: #208bf4;
+}
